@@ -1,6 +1,22 @@
 use core::ops::AddAssign;
 use core::ops::SubAssign;
 
+/// Just add traits for post increment and decrement.
+///
+/// ```
+/// use post_incr::PostIncr as _;
+/// use post_incr::PostDecr as _;
+///
+/// let mut x: i32 = 0;
+/// assert_eq!(x.post_incr(), 0);
+/// assert_eq!(x.post_incr(), 1);
+/// assert_eq!(x.post_incr(), 2);
+///
+/// assert_eq!(x.post_decr(), 3);
+/// assert_eq!(x.post_decr(), 2);
+/// assert_eq!(x.post_decr(), 1);
+/// ```
+
 pub trait PostIncr {
     /// `x++` in other language.
     ///
