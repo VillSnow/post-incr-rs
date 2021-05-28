@@ -1,3 +1,5 @@
+// Copyright 2021 Vill. Snow
+
 use core::ops::AddAssign;
 use core::ops::SubAssign;
 
